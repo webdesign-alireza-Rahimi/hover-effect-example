@@ -7,6 +7,5 @@ design opaque cards by Css and HTml
  
 
 # get opaque cards and work with scale 
-![Uploading Screenshot 2021-08-04 141032.png…]()
-
+![Screenshot 2021-08-04 141032](https://user-images.githubusercontent.com/87974796/128174472-1e93edfb-41c4-41c6-87bc-06b74649f16f.png)
  
