@@ -1,0 +1,119 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#ffaf00,#bb02ff);
+    background-attachment: fixed;
+}
+
+
+
+.container {
+    position: relative;
+    width: 1150px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.4s;
+}
+
+.card{
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: 420px;
+    box-shadow: 0px 15px 25px rgb(0,0,0,0.2);
+    border-radius: 25px;
+    margin: 20px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.card .circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+
+.circle h2  {
+    color: white;
+    font-size: 4.5em;
+    padding: 30px 0;
+}
+
+
+.card .content{
+    position: absolute;
+    bottom: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    align-items: center;
+}
+
+
+.container .card .content p {
+    color: #666;
+}
+
+
+.container .card .content a {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+}
+
+
+
+.container .card:nth-child(1) .circle,
+.container .card:nth-child(1) .content a{
+    background-color: rgb(128, 165, 53);
+}
+
+
+.container .card:nth-child(2) .circle,
+.container .card:nth-child(2) .content a{
+    background-color: rgb(197, 57, 116);
+}
+
+.container .card:nth-child(3) .circle,
+.container .card:nth-child(3) .content a{
+    background-color: rgb(47, 97, 189);
+}
+
+
+
+.container:hover .card{
+    filter: blur(20px);
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.container .card:hover {
+   filter: blur(0px);
+   transform: scale(1.1);
+   opacity: 1;
+}
